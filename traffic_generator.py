@@ -20,7 +20,7 @@ def random_string(length=10):
 
 def generate_query_params():
     """Generate random query parameters."""
-    return {f"param{random.randint(1, 10)}": random_string() for _ in range(random.randint(1, 5))}
+    return {"param{}".format(random.randint(1, 10)): random_string() for _ in range(random.randint(1, 5))}
 
 def generate_custom_headers():
     """Generate random custom headers."""
